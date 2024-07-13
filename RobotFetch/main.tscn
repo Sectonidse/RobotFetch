@@ -1,0 +1,563 @@
+[gd_scene load_steps=13 format=3 uid="uid://3drd4v1f42fh"]
+
+[ext_resource type="Script" path="res://Logic.gd" id="1_8a1i1"]
+[ext_resource type="Theme" uid="uid://2psrcxcbtmu7" path="res://theme.tres" id="1_t8l66"]
+[ext_resource type="Texture2D" uid="uid://drqs4yauvb7og" path="res://icons/ui/arrow.svg" id="3_3ylqu"]
+[ext_resource type="Texture2D" uid="uid://bmq6q4u2453um" path="res://icons/folder.png" id="4_egwv4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_iuohj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jvlrx"]
+bg_color = Color(1, 1, 1, 0.392157)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+shadow_color = Color(0, 0, 0, 0.376471)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ig56j"]
+bg_color = Color(1, 1, 1, 0.392157)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+shadow_color = Color(0, 0, 0, 0.376471)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c4hd8"]
+bg_color = Color(1, 1, 1, 0.392157)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+shadow_color = Color(0, 0, 0, 0.376471)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pxxwf"]
+bg_color = Color(1, 0, 0, 0.392157)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+shadow_color = Color(0, 0, 0, 0.376471)
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tybp3"]
+bg_color = Color(1, 1, 1, 0.392157)
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+shadow_color = Color(0, 0, 0, 0.376471)
+shadow_size = 5
+
+[sub_resource type="SystemFont" id="SystemFont_i1la6"]
+font_names = PackedStringArray("Monospace")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_25vu2"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_t8l66")
+script = ExtResource("1_8a1i1")
+
+[node name="ObjList" type="ItemList" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.074
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 0.0480003
+offset_right = -320.0
+grow_vertical = 0
+theme = ExtResource("1_t8l66")
+max_text_lines = 2
+text_overrun_behavior = 4
+max_columns = 50
+same_column_width = true
+fixed_column_width = 156
+icon_mode = 0
+fixed_icon_size = Vector2i(128, 128)
+
+[node name="Actions" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 0.037
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -312.0
+offset_top = 0.0240002
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Label4" type="Label" parent="Actions"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 192.0
+offset_right = 56.0
+offset_bottom = 215.0
+text = "STOP = false"
+
+[node name="AddFoldr" type="Button" parent="Actions"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.051
+anchor_top = 0.026
+anchor_right = 0.949
+anchor_bottom = 0.09
+offset_left = 0.0879993
+offset_top = -0.224001
+offset_right = -0.0880127
+offset_bottom = -0.160004
+text = "Add Folder"
+
+[node name="MoveObj" type="Button" parent="Actions"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.051
+anchor_top = 0.115
+anchor_right = 0.949
+anchor_bottom = 0.179
+offset_left = 0.0879993
+offset_top = 0.239998
+offset_right = -0.0880127
+offset_bottom = 0.303993
+text = "Move Folder/File to..."
+
+[node name="CopyDir" type="Button" parent="Actions"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.051
+anchor_top = 0.205
+anchor_right = 0.949
+anchor_bottom = 0.269
+offset_left = 0.0879993
+offset_top = 0.0799942
+offset_right = -0.0880127
+offset_bottom = 0.143982
+text = "Copy current directory"
+
+[node name="Button5" type="Button" parent="Actions"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.051
+anchor_top = 0.91
+anchor_right = 0.949
+anchor_bottom = 0.974
+offset_left = 0.0880003
+offset_top = 0.159973
+offset_right = -0.0880127
+offset_bottom = 0.223999
+text = "Toggle Editors"
+
+[node name="HSlider" type="HSlider" parent="Actions"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.051
+anchor_top = 0.859
+anchor_right = 0.667
+anchor_bottom = 0.885
+offset_left = 0.0880003
+offset_top = -16.016
+offset_right = -0.104019
+offset_bottom = -16.24
+min_value = 16.0
+max_value = 208.0
+step = 32.0
+value = 144.0
+tick_count = 7
+ticks_on_borders = true
+
+[node name="Label" type="Label" parent="Actions"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.051
+anchor_top = 0.862
+anchor_right = 0.051
+anchor_bottom = 0.862
+offset_left = 0.0880003
+offset_top = -41.888
+offset_right = 72.088
+offset_bottom = -15.888
+text = "View:"
+
+[node name="Label2" type="Label" parent="Actions"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.051
+anchor_top = 0.923
+anchor_right = 0.051
+anchor_bottom = 0.923
+offset_left = 0.0880003
+offset_top = -39.952
+offset_right = 95.088
+offset_bottom = -13.952
+text = "Size of Icons"
+
+[node name="Label3" type="Label" parent="Actions"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.718
+anchor_top = 0.923
+anchor_right = 0.718
+anchor_bottom = 0.923
+offset_left = -0.0160217
+offset_top = -39.952
+offset_right = 39.984
+offset_bottom = -13.952
+text = "View"
+
+[node name="CheckButton" type="HSlider" parent="Actions"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.718
+anchor_top = 0.859
+anchor_right = 0.949
+anchor_bottom = 0.885
+offset_left = -0.0160217
+offset_top = -16.016
+offset_right = -0.0880127
+offset_bottom = -16.24
+max_value = 2.0
+value = 2.0
+tick_count = 3
+ticks_on_borders = true
+
+[node name="Path" type="LineEdit" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.012
+anchor_right = 0.972
+anchor_bottom = 0.062
+offset_left = 256.0
+offset_top = 0.224
+offset_right = -343.744
+offset_bottom = -0.175999
+text = "/"
+placeholder_text = "Path"
+metadata/_edit_use_anchors_ = true
+
+[node name="Popup" type="Panel" parent="Path"]
+layout_mode = 0
+offset_top = -136.0
+offset_right = 640.0
+offset_bottom = -24.0
+
+[node name="Label" type="Label" parent="Path/Popup"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 600.0
+offset_bottom = 64.0
+text = "Error: No such directory!"
+
+[node name="Close" type="Button" parent="Path/Popup"]
+layout_mode = 0
+offset_left = 592.0
+offset_top = 64.0
+offset_right = 632.0
+offset_bottom = 104.0
+action_mode = 0
+text = "x"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -304.0
+offset_right = -16.0
+offset_bottom = 26.0
+grow_horizontal = 2
+text = "Actions"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Direction" type="HSlider" parent="."]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 128.0
+offset_bottom = 40.0
+theme_override_styles/slider = SubResource("StyleBoxEmpty_iuohj")
+min_value = -1.0
+max_value = 1.0
+step = 0.01
+tick_count = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = -1
+offset_left = 24.0
+offset_top = 8.0
+offset_right = 56.0
+offset_bottom = 40.0
+grow_horizontal = 0
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("3_3ylqu")
+expand_mode = 1
+stretch_mode = 5
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = -1
+offset_left = 48.0
+offset_top = -24.0
+offset_right = 80.0
+offset_bottom = 8.0
+rotation = 3.14159
+pivot_offset = Vector2(32, 32)
+mouse_filter = 2
+texture = ExtResource("3_3ylqu")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Go" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.965056
+anchor_top = 0.012
+anchor_right = 1.0
+anchor_bottom = 0.062
+offset_left = -335.744
+offset_top = 0.224
+offset_right = -320.0
+offset_bottom = -0.176003
+theme_override_styles/normal = SubResource("StyleBoxFlat_jvlrx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ig56j")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_c4hd8")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_pxxwf")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tybp3")
+text = "Go"
+metadata/_edit_use_anchors_ = true
+
+[node name="Editors" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_left = -832.0
+offset_top = 48.0
+offset_right = -1152.0
+offset_bottom = 648.0
+grow_vertical = 0
+theme = ExtResource("1_t8l66")
+
+[node name="Text Editor" type="Panel" parent="Editors"]
+layout_mode = 2
+
+[node name="Input" type="TextEdit" parent="Editors/Text Editor"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 41.0
+offset_right = 824.0
+offset_bottom = 561.0
+
+[node name="HSlider" type="HSlider" parent="Editors/Text Editor"]
+layout_mode = 2
+offset_left = 640.0
+offset_top = 1.0
+offset_right = 824.0
+offset_bottom = 41.0
+min_value = 8.0
+max_value = 48.0
+step = 2.0
+value = 16.0
+
+[node name="MenuBar" type="MenuBar" parent="Editors/Text Editor"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 1.0
+offset_right = 384.0
+offset_bottom = 41.0
+
+[node name="File" type="MenuButton" parent="Editors/Text Editor/MenuBar"]
+layout_mode = 0
+offset_right = 56.0
+offset_bottom = 39.0
+action_mode = 1
+text = "File"
+item_count = 4
+popup/item_0/text = "Clear"
+popup/item_0/id = 0
+popup/item_1/text = "Save"
+popup/item_1/id = 1
+popup/item_2/text = "Save as..."
+popup/item_2/id = 2
+popup/item_3/text = "Revert changes"
+popup/item_3/id = 3
+
+[node name="MenuButton" type="MenuButton" parent="Editors/Text Editor/MenuBar"]
+layout_mode = 0
+offset_left = 56.0
+offset_right = 112.0
+offset_bottom = 40.0
+text = "Edit"
+item_count = 4
+popup/item_0/text = "Cut"
+popup/item_0/id = 0
+popup/item_1/text = "Copy"
+popup/item_1/id = 1
+popup/item_2/text = "Paste"
+popup/item_2/id = 2
+popup/item_3/text = "Load from File..."
+popup/item_3/id = 3
+
+[node name="Code Editor" type="Panel" parent="Editors"]
+visible = false
+layout_mode = 2
+
+[node name="Input" type="CodeEdit" parent="Editors/Code Editor"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 41.0
+offset_right = 824.0
+offset_bottom = 561.0
+theme_override_fonts/font = SubResource("SystemFont_i1la6")
+scroll_smooth = true
+scroll_past_end_of_file = true
+gutters_draw_breakpoints_gutter = true
+gutters_draw_bookmarks = true
+gutters_draw_line_numbers = true
+indent_automatic = true
+auto_brace_completion_enabled = true
+
+[node name="HSlider" type="HSlider" parent="Editors/Code Editor"]
+layout_mode = 0
+offset_left = 640.0
+offset_right = 824.0
+offset_bottom = 40.0
+min_value = 8.0
+max_value = 48.0
+step = 2.0
+value = 16.0
+
+[node name="MenuBar" type="MenuBar" parent="Editors/Code Editor"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 1.0
+offset_right = 384.0
+offset_bottom = 41.0
+
+[node name="File" type="MenuButton" parent="Editors/Code Editor/MenuBar"]
+layout_mode = 0
+offset_right = 56.0
+offset_bottom = 39.0
+action_mode = 1
+text = "File"
+item_count = 4
+popup/item_0/text = "Clear"
+popup/item_0/id = 0
+popup/item_1/text = "Save"
+popup/item_1/id = 1
+popup/item_2/text = "Save as..."
+popup/item_2/id = 2
+popup/item_3/text = "Revert changes"
+popup/item_3/id = 3
+
+[node name="MenuButton" type="MenuButton" parent="Editors/Code Editor/MenuBar"]
+layout_mode = 0
+offset_left = 56.0
+offset_right = 112.0
+offset_bottom = 40.0
+text = "Edit"
+item_count = 4
+popup/item_0/text = "Cut"
+popup/item_0/id = 0
+popup/item_1/text = "Copy"
+popup/item_1/id = 1
+popup/item_2/text = "Paste"
+popup/item_2/id = 2
+popup/item_3/text = "Load from File..."
+popup/item_3/id = 3
+
+[node name="Image Viewer" type="Panel" parent="Editors"]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_25vu2")
+
+[node name="TextureRect" type="TextureRect" parent="Editors/Image Viewer"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 9.0
+offset_right = -8.0
+offset_bottom = -8.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Selection" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 832.0
+offset_top = -192.0
+offset_right = 960.0
+offset_bottom = -64.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0.392157)
+
+[node name="TextureRect" type="TextureRect" parent="Selection"]
+layout_mode = 0
+offset_right = 128.0
+offset_bottom = 128.0
+mouse_filter = 2
+texture = ExtResource("4_egwv4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FileDialog" type="FileDialog" parent="."]
+transparent_bg = true
+title = "Save a File as..."
+position = Vector2i(10, 30)
+size = Vector2i(836, 600)
+transparent = true
+ok_button_text = "Save"
+access = 2
+show_hidden_files = true
+
+[node name="Window" type="Window" parent="."]
+transparent_bg = true
+title = "Create a new Folder"
+position = Vector2i(13, 80)
+size = Vector2i(300, 60)
+visible = false
+transparent = true
+min_size = Vector2i(0, 60)
+max_size = Vector2i(32768, 60)
+
+[node name="LineEdit" type="LineEdit" parent="Window"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+placeholder_text = "Folder Name"
+
+[node name="Button" type="Button" parent="Window"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -28.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Done"
+
+[node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 8.0
+offset_right = 248.0
+offset_bottom = 40.0
+item_count = 3
+selected = 0
+fit_to_longest_item = false
+popup/item_0/text = "Storage"
+popup/item_0/id = 0
+popup/item_1/text = "SD Card"
+popup/item_1/id = 1
+popup/item_2/text = "USB"
+popup/item_2/id = 2

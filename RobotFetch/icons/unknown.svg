@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128mm"
+   height="128mm"
+   viewBox="0 0 128 128"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="/home/borus/Documents/Godot/RobotFetch/icons/folder.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="unknown.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="true"
+     width="128mm"
+     inkscape:zoom="1.5540715"
+     inkscape:cx="215.5628"
+     inkscape:cy="238.40602"
+     inkscape:window-width="1920"
+     inkscape:window-height="997"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid49"
+       spacingx="1.0583333"
+       spacingy="1.0583333" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke-width:0.293314;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect51"
+       width="84.666656"
+       height="105.83333"
+       x="21.166666"
+       y="10.583333"
+       ry="10.583333" />
+    <rect
+       style="fill:#8d8d8d;fill-opacity:1;stroke-width:0.426001;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect1834"
+       width="15.874997"
+       height="15.874999"
+       x="89.958328"
+       y="10.583333"
+       ry="5.2916665"
+       rx="5.2916646" />
+    <rect
+       style="fill:#8d8d8d;fill-opacity:1;stroke-width:0.491904;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2133"
+       width="5.2916665"
+       height="15.875"
+       x="89.958336"
+       y="10.583333"
+       rx="3.0000001e-06"
+       ry="0" />
+    <rect
+       style="fill:#8d8d8d;fill-opacity:1;stroke-width:0.491904;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2133-7"
+       width="15.875008"
+       height="5.291666"
+       x="89.958328"
+       y="21.166666"
+       rx="9.0000049e-06"
+       ry="0" />
+    <rect
+       style="fill:#8d8d8d;fill-opacity:1;stroke-width:0.327936;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect2580"
+       width="10.583334"
+       height="10.583336"
+       x="58.208332"
+       y="89.958328"
+       rx="2.0000032e-06" />
+    <path
+       style="fill:none;stroke:#8d8d8d;stroke-width:10;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 63.499997,79.374996 V 63.499997 C 100.54166,42.333332 52.916665,21.166666 52.916665,37.041665"
+       id="path5909"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
